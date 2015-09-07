@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='GARI',
+    name='gari',
     version='0.1.1',
     license='BSD',
     description='',
