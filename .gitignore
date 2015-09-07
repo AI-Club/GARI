@@ -2,3 +2,6 @@
 include
 bin
 lib
+.tox
+GARI.egg*
+dist/
