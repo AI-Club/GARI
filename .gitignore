@@ -5,3 +5,4 @@ lib
 .tox
 GARI.egg*
 dist/
+__pycache__/
