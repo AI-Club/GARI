@@ -5,7 +5,9 @@ Utility functions
 from .models import Object
 
 
-def create_class(name, class_type=None, **kwargs):
+def create_class(name, class_type=None, attrs=None):
     if class_type is None:
         class_type = Object
-    return type(name, (class_type,), kwargs)
+    if attrs is None:
+        attrs = {}
+    return type(name, (class_type,), attrs)

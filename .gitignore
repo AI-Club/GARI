@@ -7,3 +7,4 @@ GARI.egg*
 dist/
 __pycache__/
 *.pyc
+*.sw[op]

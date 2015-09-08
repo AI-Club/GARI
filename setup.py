@@ -12,7 +12,10 @@ setup(
     license='BSD',
     description='',
     packages=find_packages(),
+    package_data={
+        '': ['gari/definitions/*.yaml']
+    },
     long_description=sys.modules[__name__].__doc__,
     include_package_data=True,
-    install_requires=['six'],
+    install_requires=['six', 'pyyaml'],
 )

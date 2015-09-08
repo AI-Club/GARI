@@ -1,0 +1,11 @@
+apple:
+  calories: 200
+  weight: 500
+
+pumpkin:
+  calories: 1000
+  weight: 4000
+
+potato:
+  calories: 300
+  weight: 700
