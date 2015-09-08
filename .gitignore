@@ -6,3 +6,4 @@ lib
 GARI.egg*
 dist/
 __pycache__/
+*.pyc

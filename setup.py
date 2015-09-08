@@ -14,5 +14,5 @@ setup(
     packages=find_packages(),
     long_description=sys.modules[__name__].__doc__,
     include_package_data=True,
-    install_requires=[],
+    install_requires=['six'],
 )

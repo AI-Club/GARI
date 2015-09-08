@@ -6,6 +6,7 @@ doc-warnings: true
 ignore-paths:
   - docs
   - lib
+  - bin
 
 pep8:
   full: true
