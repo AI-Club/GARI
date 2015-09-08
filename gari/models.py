@@ -3,7 +3,7 @@ Environment models
 """
 
 
-class Model(object):
+class Base(object):
 
     """Base for model classes"""
 
@@ -13,16 +13,33 @@ class Model(object):
         return self.name
 
 
-class Action(Model):
+class Action(Base):
 
     """Model for actions between :py:cls:`Person` instances"""
 
     pass
 
 
-class Object(object):
+class Object(Base):
 
     """Model for objects"""
 
-    pass
+    child_objects = []
 
+
+class Agent(Object):
+
+    """Agents are special objects"""
+
+    def update(self):
+        """Update goals and agent observations"""
+        pass
+
+    def update_knowledge(self):
+        """Update agent knowledge of objects"""
+        for obj in self.child_objects:
+            self.observe(obj)
+
+    def observe(self, obj):
+        """Observe object"""
+        pass
