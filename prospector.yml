@@ -5,6 +5,7 @@ doc-warnings: true
 
 ignore-paths:
   - docs
+  - lib
 
 pep8:
   full: true
@@ -12,10 +13,12 @@ pep8:
     max-line-length: 100
 
 pylint:
-  max-line-length: 100
+  options:
+    docstring-min-length: 20
+    max-line-length: 100
 
 mccabe:
   run: false
 
 pep257:
-  run: true
+  run: false
